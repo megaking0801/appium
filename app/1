@@ -1,2 +1,8 @@
 git clone -b release/MBroker_Cathay https://git.systex.com/softmobile/iwow_Android_Library_Order.git Library_Order 
 git clone -b release/MBroker_Cathay https://git.systex.com/softmobile/iwow_Android_Library_Quote.git Library_Quote
+
+
+
+export ANDROID_HOME=/Users/linshaoqun/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools

@@ -17,7 +17,8 @@ cd ~/Library/Android/sdk/build-tools/33.0.0 \
 
 
 而主要會遇到問題的部分是opencv4nodejs，但是否每台電腦不一定就要依個別情況而查詢解決資料，主要遇到的問題則是npm err! Code1
-https://blog.csdn.net/qq_15826999/article/details/103419123 這個網址有完成到cmake的部分，不過後續依然無法，所以遇到任何錯誤可以直接上網尋找，因為每台電腦設定不大相同
-https://stackoverflow.com/questions/67399785/how-to-solve-npm-install-error-npm-err-code-1而這篇的解決辦法也有參考，不過若遇到其他問題請直接上網找答案會比較快
-https://github.com/justadudewhohacks/opencv4nodejs#how-to-install參考文章
+https://github.com/justadudewhohacks/opencv4nodejs/issues/775#issuecomment-804347861可以先照著這個操作之後
+再sudo npm -g install opencv4nodejs
+若有其他問題可以上網找
+
 https://github.com/facebook/idb/issues/615 idb問題參考

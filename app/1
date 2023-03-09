@@ -33,4 +33,11 @@ https://medium.com/parenting-tw/jenkins-android-自動化打包apk-建置-採坑
 https://juejin.cn/post/7064864809992323080
 
 
+pip install appium-python-client
+pip install openpyxl
+
 https://juejin.cn/post/6844904050761138183
+
+
+
+pip install appium-python-client

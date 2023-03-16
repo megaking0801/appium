@@ -51,3 +51,6 @@ pip install appium-python-client
   "appium:automationName": "XCUITest",
   "appium:platformVersion": "16.2"
 }
+
+https://blog.csdn.net/Oh_MyBy/article/details/103895366
+https://github.com/appium/appium/issues/17497

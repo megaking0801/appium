@@ -72,3 +72,52 @@ class Driver2:
 		}
 		return webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
 	
+class ioslogin:
+	def __init__(driver):
+            driver.implicitly_wait(10)
+            #關閉通知
+            el1 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="不允許")
+            el1.click()
+            #帳號密碼
+            el2 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeApplication[@name=\"樹精靈(測)\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
+            el2.send_keys("F123310943")
+            el3 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeToolbar[@name=\"Toolbar\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
+            el3.click()
+            el4 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeApplication[@name=\"樹精靈(測)\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField")
+            el4.send_keys("abc123")
+            
+            el5 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeToolbar[@name=\"Toolbar\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
+            el5.click()
+            #關閉雙因子登入
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
+            el6.click()
+
+            el7 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Button_Login")
+            el7.click()
+            driver.implicitly_wait(20)
+            el8 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeStaticText[@name=\"暫時不用\"]")
+            el8.click()
+            el9 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="CathayIntroduction close")
+            el9.click()

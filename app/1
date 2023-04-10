@@ -121,3 +121,22 @@ class ioslogin:
             el8.click()
             el9 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="CathayIntroduction close")
             el9.click()
+
+
+
+{
+  "name": "appium_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "appium": "appium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "appium": "^1.22.3"
+  }
+}

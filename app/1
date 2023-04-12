@@ -16,10 +16,6 @@ cd ~/Library/Android/sdk/build-tools/33.0.0 \
 
 
 
-而主要會遇到問題的部分是opencv4nodejs，但是否每台電腦不一定就要依個別情況而查詢解決資料，主要遇到的問題則是npm err! Code1
-https://github.com/justadudewhohacks/opencv4nodejs/issues/775#issuecomment-804347861可以先照著這個操作之後
-再sudo npm -g install opencv4nodejs
-若有其他問題可以上網找
 
 https://github.com/facebook/idb/issues/615 idb問題參考
 
@@ -57,71 +53,6 @@ https://github.com/appium/appium/issues/17497
 
 from appium import webdriver
 
-class Driver2:
-	def __init__():
-		desired_caps = {
-    		'platformName': 'iOS',
-    		'platformVersion': '15.4.1', # 實際設備的版本號
-    		'deviceName': 'SM iphoneX', # 實際設備名稱
-    		'udid': '3dd9ee3b57268ad708380b6ae98348975fd5a5a0', # 實際設備的UDID
-		    "app":"/Users/21ms20r/.jenkins/workspace/iOS_MBroker_Cathay/build/樹精靈(測).app",
-    		'bundleId': 'com.softmobile.developer.MBroker.CathayTW.test', # 應用程序包ID
-    		'automationName': 'XCUITest', # 使用XCUITest框架
-    		'xcodeOrgId': '95E44WWFM7', # 開發人員團隊ID
-    		'xcodeSigningId': 'iPhone Developer' # 開發人員證書名稱
-		}
-		return webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
-	
-class ioslogin:
-	def __init__(driver):
-            driver.implicitly_wait(10)
-            #關閉通知
-            el1 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="不允許")
-            el1.click()
-            #帳號密碼
-            el2 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeApplication[@name=\"樹精靈(測)\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField")
-            el2.send_keys("F123310943")
-            el3 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeToolbar[@name=\"Toolbar\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
-            el3.click()
-            el4 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeApplication[@name=\"樹精靈(測)\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField")
-            el4.send_keys("abc123")
-            
-            el5 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeToolbar[@name=\"Toolbar\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
-            el5.click()
-            #關閉雙因子登入
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-            el6 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="version")
-            el6.click()
-
-            el7 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Button_Login")
-            el7.click()
-            driver.implicitly_wait(20)
-            el8 = driver.find_element(by=AppiumBy.XPATH, value="//XCUIElementTypeStaticText[@name=\"暫時不用\"]")
-            el8.click()
-            el9 = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="CathayIntroduction close")
-            el9.click()
-
 
 
 {
@@ -140,3 +71,5 @@ class ioslogin:
     "appium": "^1.22.3"
   }
 }
+
+https://glints.com/tw/blog/docker-basic-tutorial/
